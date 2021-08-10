@@ -1,0 +1,20 @@
+@import "global.less";
+
+.avatar-with-name {
+    .aui-avatar {
+        margin-right: @baseSpacing;
+
+        &.aui-avatar-xsmall {
+            margin-right: @halfSpacing;
+        }
+    }
+}
+
+.group-avatar {
+    &.aui-avatar-small {
+        .square(@avatar-size-small);
+        .border-radius(3px);
+        background: transparent url(icons/group-avatar-48.png) no-repeat 0 0;
+        background-size: @avatar-size-small;
+    }
+}
